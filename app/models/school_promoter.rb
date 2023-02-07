@@ -1,0 +1,2 @@
+class SchoolPromoter < ApplicationRecord
+end

@@ -1,2 +1,0 @@
-class SchoolPromoterDatum < ApplicationRecord
-end
