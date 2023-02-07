@@ -1,0 +1,16 @@
+<ul>
+  <% @referrals.each do |referral| %>
+    <li><%= referral.referral_name %></li>
+    <li><%= referral.referral_phone %></li>
+    <li><%= referral.referral_school %></li>
+    <li><%= referral.referral_grade %></li>
+    <li><%= referral.referral_division %></li>
+    <li><%= referral.referral_shift %></li>
+    <li><%= referral.referral_school_location %></li>
+    <li><%= referral.referrer_name %></li>
+    <li><%= referral.referrer_name %></li>
+    <li><%= referral.referrer_phone %></li>
+    <li><%= referral.referrer_location %></li>
+    <li><%= referral.referrer_school %></li>
+  <% end %>
+</ul>
