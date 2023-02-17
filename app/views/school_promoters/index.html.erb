@@ -1,0 +1,17 @@
+<ul>
+  <% @school_promoters.each do |s| %>
+    <li><%= s.promoter_name %></li>
+    <li><%= s.promotion_date %></li>
+    <li><%= s.phone %></li>
+    <li><%= s.school %></li>
+    <li><%= s.location %></li>
+    <%# <li><%= s.address </li> %>
+    <%# <li><%= s.latitude </li> %>
+    <%# <li><%= s.longitude </li> %>
+    <li><%= s.name %></li>
+    <li><%= s.grade %></li>
+    <li><%= s.division %></li>
+    <li><%= s.shift %></li>
+    <li><%= s.relationship %></li>
+  <% end %>
+</ul>

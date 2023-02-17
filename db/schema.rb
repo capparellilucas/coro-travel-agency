@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_03_004504) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_07_172515) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,7 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_03_004504) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "school_promoter_data", force: :cascade do |t|
+  create_table "school_promoters", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "promoter_name"
     t.datetime "promotion_date", precision: nil
