@@ -1,17 +1,85 @@
-<ul>
-  <% @school_promoters.each do |s| %>
-    <li><%= s.promoter_name %></li>
-    <li><%= s.promotion_date %></li>
-    <li><%= s.phone %></li>
-    <li><%= s.school %></li>
-    <li><%= s.location %></li>
-    <%# <li><%= s.address </li> %>
-    <%# <li><%= s.latitude </li> %>
-    <%# <li><%= s.longitude </li> %>
-    <li><%= s.name %></li>
-    <li><%= s.grade %></li>
-    <li><%= s.division %></li>
-    <li><%= s.shift %></li>
-    <li><%= s.relationship %></li>
-  <% end %>
-</ul>
+
+
+
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-12 col-xl-10">
+
+        <div class="card">
+          <div class="card-header p-3">
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Referidos</h5>
+          </div>
+          <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+
+            <table class="table mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre Promotor</th>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">Colegio</th>
+                  <th scope="col">Localidad</th>
+                  <th scope="col">Nombre del alumno</th>
+                  <th scope="col">Grado</th>
+                  <th scope="col">Division</th>
+                  <th scope="col">Turno</th>
+                  <th scope="col">Parentesco</th>
+                  <th scope="col">Fecha creacion</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <% @school_promoters.each do |s| %>
+                <tr>
+                  <td class="align-middle">
+                    <span><%= s.promoter_name %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.promotion_date %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.phone %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.school %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.location %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.name %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.grade %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.division %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.shift %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.relationship %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.created_at %></span>
+                  </td>
+    <%#<%= s.address  %>
+    <%#<%= s.latitude  %>
+    <%#<%= s.longitude  %>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="card-footer text-end p-3">
+            <%= link_to "Volver", :back, class: "btn btn-primary"%>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
