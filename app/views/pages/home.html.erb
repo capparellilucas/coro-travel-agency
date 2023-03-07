@@ -1,6 +1,11 @@
-
-<img src="<%= image_path("home_background.jpg") %>" alt="home_background2">
-
+<div class="home-container-relative justify-content-center d-flex ">
+  <%# <div class="background-container" > %>
+    <img class="background-container" src="<%= image_path("home_background.jpg") %>" alt="home_background" width="100%">
+  <%# </div> %>
+  <%# <div > %>
+    <img class="click-container" src="<%= image_path("click_aqui.png") %>" width="140px" height="140px" alt="click aqui">
+  <%# </div> %>
+</div>
 <%= link_to "referrals form", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
 
 <%= link_to "referrals index", referrals_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
