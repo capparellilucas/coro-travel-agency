@@ -1,15 +1,32 @@
 <div class="home-container">
-  <h1 class="title" >Viajes de Egresados</h1>
+  <h1 class="title" >Viaje de Egresados</h1>
   <div id="banner" class="d-flex justify-content-center">
     <img src="<%= image_path("banner 2.jpg") %>" alt="banner 2">
   </div>
+  <h4 class="d-flex justify-content-center">Promocion sin obligación de compra</h4>
 
-  <%= link_to "referrals form", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  <h2 class="d-flex justify-content-center">Recomendá el mejor viaje y ganá!!!</h2>
 
-  <%= link_to "referrals index", referrals_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  <div class="d-flex justify-content-center">
+    <%= link_to "Formulario de Referidos", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  </div>
 
-  <%= link_to "school promoter form", new_school_promoter_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "Admin" %>
+      <%= link_to "Indice de referidos", referrals_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
 
-  <%= link_to "school promoter index", school_promoters_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "User" %>
+      <%= link_to "Formulario de Promotores", new_school_promoter_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
 
+  <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "Admin" %>
+      <%= link_to "Indice de Promotores", school_promoters_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
+<%# <% console %>
 </div>
