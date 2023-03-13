@@ -1,15 +1,24 @@
 // Specific CSS for your home-page
 .home-container {
   background-color: #F18F01;
-  // height: 70vh;
-  // margin: 0 auto;
+  position: relative;
+  height: cover;
 }
 
 #banner {
-  background-size: cover;
+  // background-size: cover;
   // background-image: url("banner 2.jpg");
   // background-repeat: no-repeat;
   // max-height: 100%;
-  height: 40vh;
-  width: 70vw;
+  height: 50vh;
+  width: cover;
+}
+
+.title {
+  position: absolute;
+  left: 38%;
+  top: 10%;
+  color: #F18F01;
+  font-weight: bolder;
+
 }
