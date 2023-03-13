@@ -1,11 +1,15 @@
 // Specific CSS for your home-page
 .home-container {
   background-color: #F18F01;
-  height: 70vh;
+  // height: 70vh;
   // margin: 0 auto;
 }
 
 #banner {
   background-size: cover;
-  background-image: url("banner 2.jpg");
+  // background-image: url("banner 2.jpg");
+  // background-repeat: no-repeat;
+  // max-height: 100%;
+  height: 40vh;
+  width: 70vw;
 }
