@@ -1,19 +1,17 @@
 <div class="home-container">
   <h1 class="title" >Viaje de Egresados</h1>
-  <%# <div class="d-flex justify-content-center">
-    <img src="<%= image_path("background_universe.jpg") " alt="background_universe">
-  </div> %>
+
   <h4 class="d-flex justify-content-center font-rubik">Promocion sin obligación de compra</h4>
 
   <h2 class="d-flex justify-content-center">Recomendá el mejor viaje y ganá!!!</h2>
 
   <div class="d-flex justify-content-center">
-    <%= link_to "Formulario de Referidos", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <%= link_to "Formulario de Referidos Primaria", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
   </div>
 
   <div class="d-flex justify-content-center">
     <% if current_user && current_user.type_of_user == "Admin" %>
-      <%= link_to "Indice de referidos", referrals_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+      <%= link_to "Indice de referidos Primaria", referrals_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
     <% end %>
   </div>
 
