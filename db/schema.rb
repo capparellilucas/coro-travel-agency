@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_13_081905) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_24_232624) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +26,25 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_081905) do
     t.string "referrer_phone"
     t.string "referrer_location"
     t.string "referrer_school"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "school_2_promoters", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "promoter_name"
+    t.datetime "promotion_date", precision: nil
+    t.string "phone"
+    t.string "school"
+    t.string "location"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "name"
+    t.string "grade"
+    t.string "division"
+    t.string "shift"
+    t.string "relationship"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
