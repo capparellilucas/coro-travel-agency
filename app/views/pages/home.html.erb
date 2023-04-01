@@ -1,21 +1,26 @@
 <div class="home-container">
 
-  <div class="container pt-5">
-    <div class="row justify-content-start my-5">
-      <div class="col-8 justify-content-center">
-          <%= link_to "Primaria, Formulario de Referidos ", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+  <%# <div class="container pt-5"> %>
+  <div class="row-margin">
+      <div class="d-flex justify-content-center">
+          <div id="title", class="font-rubik">UNIVERSO EGRESADOS</div>
+      </div>
+    </div>
+    <div class="row-margin">
+      <div class="d-flex justify-content-center">
+          <%= link_to "Primaria, Formulario de Referidos ", new_referral_path, class: "home-button font-rubik" %>
       </div>
     </div>
 
-    <div class="row justify-content-start my-5">
-      <div class="col-8 justify-content-center">
-          <%= link_to "Secundaria, Formulario de Referidos ", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-white bg-dark bg-gradient mt-3 px-5 shadow border-0 font-rubik" %>
+    <div class="row-margin">
+      <div class="d-flex justify-content-center">
+          <%= link_to "Secundaria, Formulario de Referidos ", new_referral_path, class: "home-button font-rubik" %>
       </div>
     </div>
 
-    <div class="row justify-content-start my-5">
-      <div class="col-8 justify-content-center">
-          <%= link_to "Fiesta de egresados", new_referral_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-dark bg-gradient mt-3 px-5 text-dark-purple shadow border-0" %>
+    <div class="row-margin">
+      <div class="d-flex justify-content-center">
+          <%= link_to "Fiesta de egresados", new_referral_path, class: "home-button font-rubik" %>
       </div>
     </div>
 
@@ -39,5 +44,5 @@
       <% end %>
     </div>
   <%# <% console %>
-  </div>
+  <%# </div> %>
 </div>
