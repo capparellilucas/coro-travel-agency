@@ -10,15 +10,31 @@
   // margin: 0 10%;
 }
 
-.title {
-  position: absolute;
-  left: 38%;
-  top: 10%;
-  color: #F18F01;
-  font-weight: bolder;
-}
 
 .font-rubik {
   font-family: 'Rubik Dirt', cursive;
-  color: #081448;
+  color: #ffffff;
+  font-size: 40px;
+  text-decoration: none;
+
+}
+
+.home-button {
+  border-radius: 40%;
+  border: 10px solid;
+  border-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.home-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.row-margin {
+  padding-top: 10vh;
+}
+
+#title {
+  font-size: 60px;
 }
