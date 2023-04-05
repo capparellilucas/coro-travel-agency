@@ -1,16 +1,16 @@
 <%= simple_form_for(school_promoter) do |f| %>
-  <%= f.input :promoter_name %>
-  <%= f.input :promotion_date %>
-  <%= f.input :phone %>
-  <%= f.input :school %>
-  <%= f.input :location %>
+  <%= f.input :promoter_name, label: "Nombre del promotor" %>
+  <%= f.input :promotion_date, label: "Fecha de promoción" %>
+  <%= f.input :phone, label: "Telefono" %>
+  <%= f.input :school, label: "Colegio" %>
+  <%= f.input :location, label: "Localidad" %>
   <%# "address"
   latitude"
   longitude" %>
-  <%= f.input :name %>
-  <%= f.input :grade %>
-  <%= f.input :division %>
-  <%= f.input :shift %>
-  <%= f.input :relationship %>
+  <%= f.input :name, label: "Nombre" %>
+  <%= f.input :grade, label: "Grado / Año" %>
+  <%= f.input :division, label: "Curso" %>
+  <%= f.input :shift, label: "Turno" %>
+  <%= f.input :relationship, label: "Relación" %>
   <%= f.submit %>
 <% end %>
