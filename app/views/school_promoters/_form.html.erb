@@ -1,16 +1,84 @@
 <%= simple_form_for(school_promoter) do |f| %>
   <%# <%= f.input :promoter_name, label: "Nombre del promotor" %>
   <%# <%= f.input :promotion_date, label: "Fecha de promoción" %>
-  <%= f.input :phone, label: "Telefono" %>
   <%= f.input :school, label: "Colegio" %>
   <%= f.input :location, label: "Localidad" %>
-  <%# "address"
-  latitude"
-  longitude" %>
-  <%= f.input :name, label: "Nombre" %>
   <%= f.input :grade, label: "Grado / Año" %>
   <%= f.input :division, label: "Curso" %>
   <%= f.input :shift, label: "Turno" %>
-  <%= f.input :relationship, label: "Relación" %>
+  <%# "address"
+  latitude"
+  longitude" %>
+  <div>
+    <div class="row">
+      <div class="col">
+        <%= f.input :name, label: "Nombre" %>
+      </div>
+      <div class="col">
+        <%= f.input :phone, label: "Telefono" %>
+      </div>
+      <div class="col">
+        <%= f.input :relationship, label: "Relación" %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col">
+        <%= f.input :name2, label: "Nombre 2" %>
+      </div>
+      <div class="col">
+        <%= f.input :phone2, label: "Telefono 2" %>
+      </div>
+      <div class="col">
+        <%= f.input :relationship2, label: "Relación 2" %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col">
+        <%= f.input :name3, label: "Nombre 3" %>
+      </div>
+      <div class="col">
+        <%= f.input :phone3, label: "Telefono 3" %>
+      </div>
+      <div class="col">
+        <%= f.input :relationship3, label: "Relación 3" %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col">
+        <%= f.input :name4, label: "Nombre 4" %>
+      </div>
+      <div class="col">
+        <%= f.input :phone4, label: "Telefono 4" %>
+      </div>
+      <div class="col">
+        <%= f.input :relationship4, label: "Relación 4" %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col">
+        <%= f.input :name5, label: "Nombre 5" %>
+      </div>
+      <div class="col">
+        <%= f.input :phone5, label: "Telefono 5" %>
+      </div>
+      <div class="col">
+        <%= f.input :relationship5, label: "Relación 5" %>
+      </div>
+    </div>
+  </div>
+
+  <%= f.input :observations, as: :text, label: "Observaciones" %>
   <%= f.submit %>
 <% end %>
