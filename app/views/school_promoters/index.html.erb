@@ -15,8 +15,8 @@
             <table class="table mb-0">
               <thead>
                 <tr>
-                  <th scope="col">Nombre Promotor</th>
-                  <th scope="col">Fecha</th>
+                  <th scope="col">Numero de Promotor</th>
+                  <%# <th scope="col">Fecha</th> %>
                   <th scope="col">Telefono</th>
                   <th scope="col">Colegio</th>
                   <th scope="col">Localidad</th>
@@ -33,11 +33,11 @@
                 <% @school_promoters.each do |s| %>
                 <tr>
                   <td class="align-middle">
-                    <span><%= s.promoter_name %></span>
+                    <span><%= s.user_id %></span>
                   </td>
-                  <td class="align-middle">
-                    <span><%= s.promotion_date %></span>
-                  </td>
+                  <%# <td class="align-middle">
+                    <span><%= s.promotion_date </span>
+                  </td> %>
                   <td class="align-middle">
                     <span><%= s.phone %></span>
                   </td>
