@@ -14,7 +14,7 @@ class SchoolPromotersController < ApplicationController
     @school_promoter.user_id = current_user.id
     @school_promoter.save # Will raise ActiveModel::ForbiddenAttributesError
 
-    # redirect_to restaurant_path(@restaurant)
+    redirect_to school_promoter_path(@school_promoter)
   end
 
   private
