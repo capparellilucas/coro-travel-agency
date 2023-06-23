@@ -7,7 +7,7 @@
 
         <div class="card">
           <div class="card-header p-3">
-            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Contacto Primaria</h5>
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Contacto Secundaria</h5>
           </div>
           <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
 
@@ -25,31 +25,31 @@
                 </tr>
               </thead>
               <tbody>
-                <% @contacts.each do |contact| %>
+                <% @second_contacts.each do |second_contact| %>
                 <tr>
                   <td class="align-middle">
-                    <span><%= contact.contact_name %></span>
+                    <span><%= second_contact.second_contact_name %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_phone %></span>
+                    <span><%= second_contact.second_contact_phone %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_mail %></span>
+                    <span><%= second_contact.second_contact_mail %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_school %></span>
+                    <span><%= second_contact.second_contact_school %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_grade %></span>
+                    <span><%= second_contact.second_contact_grade %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_division %></span>
+                    <span><%= second_contact.second_contact_division %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_shift %></span>
+                    <span><%= second_contact.second_contact_shift %></span>
                   </td>
                   <td class="align-middle">
-                    <span><%= contact.contact_school_location %></span>
+                    <span><%= second_contact.second_contact_school_location %></span>
                   </td>
                 </tr>
                 <% end %>

@@ -62,5 +62,18 @@
       <%= link_to "Indice de Promotores", school_promoters_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
     <% end %>
   </div>
+
+    <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "Admin" %>
+      <%= link_to "Indice de Contactos Primaria", contacts_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
+
+    <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "Admin" %>
+      <%= link_to "Indice de Contactos Secundaria", second_contacts_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
+
   <%# <% console %>
 </div>
