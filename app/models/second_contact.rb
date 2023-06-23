@@ -1,0 +1,2 @@
+class SecondContact < ApplicationRecord
+end
