@@ -1,11 +1,11 @@
 <%= simple_form_for(contact) do |f| %>
-  <%= f.input :contact_name %>
-  <%= f.input :contact_phone %>
-  <%= f.input :contact_mail %>
-  <%= f.input :contact_school %>
-  <%= f.input :contact_grade %>
-  <%= f.input :contact_division %>
-  <%= f.input :contact_shift %>
-  <%= f.input :contact_school_location %>
-  <%= f.submit %>
+  <%= f.input :contact_name, label: "Nombre" %>
+  <%= f.input :contact_phone, label: "Telefono" %>
+  <%= f.input :contact_mail, label: "Email" %>
+  <%= f.input :contact_school, label: "Escuela / Colegio" %>
+  <%= f.input :contact_grade, label: "Grado" %>
+  <%= f.input :contact_division, label: "División" %>
+  <%= f.input :contact_shift, label: "Turno" %>
+  <%= f.input :contact_school_location, label: "Ubicacion de la escuela" %>
+  <%= f.submit class:"btn btn-primary" %>
 <% end %>
