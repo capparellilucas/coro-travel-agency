@@ -1,0 +1,68 @@
+
+
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-12 col-xl-10">
+
+        <div class="card">
+          <div class="card-header p-3">
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Contacto Primaria</h5>
+          </div>
+          <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+
+            <table class="table mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Celular</th>
+                  <th scope="col">Mail</th>
+                  <th scope="col">Colegio</th>
+                  <th scope="col">Grado</th>
+                  <th scope="col">Curso</th>
+                  <th scope="col">Turno</th>
+                  <th scope="col">Localidad del colegio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @contacts.each do |contact| %>
+                <tr>
+                  <td class="align-middle">
+                    <span><%= contact.contact_name %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_phone %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_mail %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_school %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_grade %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_division %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_shift %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= contact.contact_school_location %></span>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="card-footer text-end p-3">
+            <%= link_to "Volver", :back, class: "btn btn-primary"%>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

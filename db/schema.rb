@@ -10,9 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_05_165104) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_23_034630) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "contact_name"
+    t.string "contact_phone"
+    t.string "contact_mail"
+    t.string "contact_school"
+    t.string "contact_grade"
+    t.string "contact_division"
+    t.string "contact_shift"
+    t.string "contact_school_location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "referrals", force: :cascade do |t|
     t.string "referral_name"
@@ -79,6 +92,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_05_165104) do
     t.string "relationship3"
     t.string "relationship4"
     t.string "relationship5"
+  end
+
+  create_table "second_contacts", force: :cascade do |t|
+    t.string "second_contact_name"
+    t.string "second_contact_phone"
+    t.string "second_contact_mail"
+    t.string "second_contact_school"
+    t.string "second_contact_grade"
+    t.string "second_contact_division"
+    t.string "second_contact_shift"
+    t.string "second_contact_school_location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

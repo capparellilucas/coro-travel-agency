@@ -1,0 +1,11 @@
+<%= simple_form_for(second_contact) do |f| %>
+  <%= f.input :second_contact_name, label: "Nombre" %>
+  <%= f.input :second_contact_phone, label: "Telefono" %>
+  <%= f.input :second_contact_mail, label: "Email" %>
+  <%= f.input :second_contact_school, label: "Colegio" %>
+  <%= f.input :second_contact_grade, label: "Año" %>
+  <%= f.input :second_contact_division, label: "División" %>
+  <%= f.input :second_contact_shift, label: "Turno" %>
+  <%= f.input :second_contact_school_location, label: "Ubicacion del colegio" %>
+  <%= f.submit class:"btn btn-primary" %>
+<% end %>
