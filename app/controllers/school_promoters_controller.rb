@@ -28,17 +28,30 @@ class SchoolPromotersController < ApplicationController
       :user_id,
       :promoter_name,
       :promotion_date,
-      :phone,
       :school,
       :location,
-  # "address"
-  # latitude"
-  # longitude"
+      # "address"
+      # latitude"
+      # longitude"
       :name,
+      :name2,
+      :name3,
+      :name4,
+      :name5,
+      :phone,
+      :phone2,
+      :phone3,
+      :phone4,
+      :phone5,
+      :relationship,
+      :relationship2,
+      :relationship3,
+      :relationship4,
+      :relationship5,
       :grade,
       :division,
       :shift,
-      :relationship
+      :observations
     )
   end
 

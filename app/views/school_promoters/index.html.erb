@@ -17,14 +17,14 @@
                 <tr>
                   <th scope="col">Numero de Promotor</th>
                   <%# <th scope="col">Fecha</th> %>
-                  <th scope="col">Telefono</th>
                   <th scope="col">Colegio</th>
                   <th scope="col">Localidad</th>
                   <th scope="col">Nombre del alumno</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">Relacion</th>
                   <th scope="col">Grado</th>
                   <th scope="col">Division</th>
                   <th scope="col">Turno</th>
-                  <th scope="col">Parentesco</th>
                   <th scope="col">Fecha creacion</th>
 
                 </tr>
@@ -39,9 +39,6 @@
                     <span><%= s.promotion_date </span>
                   </td> %>
                   <td class="align-middle">
-                    <span><%= s.phone %></span>
-                  </td>
-                  <td class="align-middle">
                     <span><%= s.school %></span>
                   </td>
                   <td class="align-middle">
@@ -49,6 +46,36 @@
                   </td>
                   <td class="align-middle">
                     <span><%= s.name %></span>
+                    <br>
+                    <span><%= s.name2 %></span>
+                    <br>
+                    <span><%= s.name3 %></span>
+                    <br>
+                    <span><%= s.name4 %></span>
+                    <br>
+                    <span><%= s.name5 %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.phone %></span>
+                    <br>
+                    <span><%= s.phone2 %></span>
+                    <br>
+                    <span><%= s.phone3 %></span>
+                    <br>
+                    <span><%= s.phone4 %></span>
+                    <br>
+                    <span><%= s.phone5 %></span>
+                  </td>
+                  <td class="align-middle">
+                    <span><%= s.relationship %></span>
+                    <br>
+                    <span><%= s.relationship2 %></span>
+                    <br>
+                    <span><%= s.relationship3 %></span>
+                    <br>
+                    <span><%= s.relationship4 %></span>
+                    <br>
+                    <span><%= s.relationship5 %></span>
                   </td>
                   <td class="align-middle">
                     <span><%= s.grade %></span>
@@ -58,9 +85,6 @@
                   </td>
                   <td class="align-middle">
                     <span><%= s.shift %></span>
-                  </td>
-                  <td class="align-middle">
-                    <span><%= s.relationship %></span>
                   </td>
                   <td class="align-middle">
                     <span><%= s.created_at %></span>
