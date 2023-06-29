@@ -32,7 +32,7 @@
 
   <div class="row-margin">
     <div class="d-flex justify-content-center">
-      <%= link_to "FIESTA DE EGRESADOS", new_referral_path, class: "home-button font-rubik" %>
+      <%= link_to "FIESTA DE EGRESADOS", new_graduate_path, class: "home-button font-rubik" %>
     </div>
   </div>
 
@@ -74,6 +74,12 @@
     <div class="d-flex justify-content-center">
     <% if current_user && current_user.type_of_user == "Admin" %>
       <%= link_to "Indice de Contactos Secundaria", second_contacts_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
+    <% end %>
+  </div>
+
+      <div class="d-flex justify-content-center">
+    <% if current_user && current_user.type_of_user == "Admin" %>
+      <%= link_to "Indice Contactos Fiestas de Egresados", graduates_path, class: "btn btn-primary btn-lg rounded-pill text-primary bg-white mt-3 px-5 text-dark-purple shadow border-0" %>
     <% end %>
   </div>
 

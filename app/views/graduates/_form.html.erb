@@ -1,0 +1,12 @@
+<%= simple_form_for(graduate) do |f| %>
+  <%= f.input :name, label: "Nombre" %>
+  <%= f.input :phone, label: "Telefono" %>
+  <%= f.input :mail, label: "Email" %>
+  <%= f.input :school, label: "Escuela / Colegio" %>
+  <%= f.input :grade, label: "Grado" %>
+  <%= f.input :division, label: "División" %>
+  <%= f.input :shift, label: "Turno" %>
+  <%= f.input :school_location, label: "Ubicacion de la escuela" %>
+  <%= f.input :level, label: "Primaria / Secundaria", collection: ["Primaria", "Secundaria"] %>
+  <%= f.button :submit, "Crear contacto", class:"btn btn-primary" %>
+<% end %>
