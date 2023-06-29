@@ -2,7 +2,7 @@
   <%# <%= f.input :promoter_name, label: "Nombre del promotor" %>
   <%# <%= f.input :promotion_date, label: "Fecha de promoción" %>
   <%= f.input :school, label: "Colegio" %>
-  <%= f.input :location, label: "Localidad" %>
+  <%= f.input :location, label: "Localidad / Barrio" %>
   <%= f.input :grade, label: "Grado / Año" %>
   <%= f.input :division, label: "Curso" %>
   <%= f.input :shift, label: "Turno" %>
@@ -80,5 +80,5 @@
   </div>
 
   <%= f.input :observations, as: :text, label: "Observaciones" %>
-  <%= f.submit class:"btn btn-primary" %>
+  <%= f.button :submit, "Crear contacto",class:"btn btn-primary" %>
 <% end %>
