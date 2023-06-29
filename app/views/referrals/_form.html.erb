@@ -1,14 +1,33 @@
 <%= simple_form_for(referral) do |f| %>
-  <%= f.input :referral_name %>
-  <%= f.input :referral_phone %>
-  <%= f.input :referral_school %>
-  <%= f.input :referral_grade %>
-  <%= f.input :referral_division %>
-  <%= f.input :referral_shift %>
-  <%= f.input :referral_school_location %>
-  <%= f.input :referrer_name %>
-  <%= f.input :referrer_phone %>
-  <%= f.input :referrer_location %>
-  <%= f.input :referrer_school %>
-  <%= f.submit %>
+<div><b>REFERENTE</b></div>
+<br>
+
+  <%= f.input :referrer_name, label: "Nombre (obligatorio)" %>
+  <%= f.input :referrer_phone, label: "Teléfono (obligatorio)" %>
+  <%= f.input :referrer_school, label: "Colegio (opcional)" %>
+
+<%# Grado/Año (opcional) %>
+<%# Curso (opcional) %>
+<%# Turno (opcional) %>
+
+  <%= f.input :referrer_location, label: "Localidad/Barrio (opcional)" %>
+
+  <%# desplegable con la opcion  Primario / Secundario %>
+
+<br>
+<div><b>REFERIDO</b> <span>(todos los datos soliciados a continuacion son obligatorios)</span></div>
+<br>
+
+  <%= f.input :referral_name, label: "Nombre"  %>
+  <%= f.input :referral_phone, label: "Teléfono" %>
+  <%= f.input :referral_school, label: "Colegio" %>
+  <%= f.input :referral_grade, label: "Grado / Año" %>
+  <%= f.input :referral_division, label: "Curso" %>
+  <%= f.input :referral_shift, label: "Turno" %>
+  <%= f.input :referral_school_location, label: "Localidad / Barrio" %>
+
+<%# desplegable con la opcion  Primario / Secundario %>
+
+  <%# <%= f.submit class:"btn btn-primary", label: "Crear Referido" > %>
+  <%= f.button :submit, "Crear Referido", class:"btn btn-primary" %>
 <% end %>
