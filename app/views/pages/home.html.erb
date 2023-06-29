@@ -24,31 +24,31 @@
     </div>
   </div>
 
-  <div class="row-margin">
+  <%# <div class="row-margin">
     <div class="d-flex justify-content-center">
       <div id="subtitle", class="font-rubik">FORMULARIOS DE REFERIDOS</div>
     </div>
-  </div>
-
-
-
-  <div class="row-margin">
-    <div class="d-flex justify-content-center">
-      <%= link_to "PRIMARIA", new_referral_path, class: "home-button font-rubik" %>
-    </div>
-  </div>
-
-  <div class="row-margin">
-    <div class="d-flex justify-content-center">
-      <%= link_to "SECUNDARIA", new_referral_path, class: "home-button font-rubik" %>
-    </div>
-  </div>
+  </div> %>
 
   <div class="row-margin">
     <div class="d-flex justify-content-center">
       <%= link_to "FIESTA DE EGRESADOS", new_referral_path, class: "home-button font-rubik" %>
     </div>
   </div>
+
+
+  <div class="row-margin">
+    <div class="d-flex justify-content-center">
+      <%= link_to "RECOMENDA Y GANA", new_referral_path, class: "home-button font-rubik" %>
+    </div>
+  </div>
+
+  <%# <div class="row-margin">
+    <div class="d-flex justify-content-center">
+      <%= link_to "SECUNDARIA", new_referral_path, class: "home-button font-rubik" >
+    </div>
+  </div> %>
+
 
   <div class="d-flex justify-content-center">
     <% if current_user && current_user.type_of_user == "Admin" %>
